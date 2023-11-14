@@ -1,0 +1,63 @@
+/* BottomBar.css */
+.bottom-bar {
+    display: none;}
+    /* justify-content: space-between;
+    background-color: #fff;
+    color:#C00707;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    padding: 10px 0;
+    align-items: center;
+    z-index: 1000; */
+  
+  
+  /* .bottom-bar-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+  } */
+  
+  /* .bottom-bar-item:hover {
+    background-color: #fff; */
+  /* } */
+  @media (max-width:660px){
+    .bottom-bar {
+        position: sticky;
+        bottom: 0%;
+        display:flex;
+        justify-content: space-between;
+        /* background: linear-gradient(180deg, rgba(70, 5, 93, 0.88) 0%, rgba(112, 2, 2, 0.51) 100%); */
+        background-color:#fff;
+        color:black;
+        font-weight:bold;
+        font-size: large;
+        position: fixed;
+        bottom: 0;
+        /* left: 0; */
+        width:100%;
+        padding: 10px 0;
+        align-items: center;
+        z-index: 1000;
+        /* border-radius: 10rem; */
+        /* opacity: 100; */
+      }
+      
+      .bottom-bar-item {
+        flex: 1;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 100%;
+        /* background-color: #fff; */
+        /* gap: 3rem; */
+      }
+      
+      .bottom-bar-item:hover {
+        background-color: #fff;
+      }
+  }
+  
+

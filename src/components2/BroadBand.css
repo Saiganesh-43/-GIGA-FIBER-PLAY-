@@ -1,0 +1,6 @@
+.ForBg{
+    background-image: linear-gradient(to top, #730684, #97006b, #ad004e, #b7002e, #b50505);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250vh;
+}

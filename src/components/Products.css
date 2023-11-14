@@ -1,0 +1,140 @@
+.Products {
+    width: 73.75rem;
+    /* width:100%; */
+    height: 43.5rem;
+    background: #F7FAFC;
+    margin: auto;
+    margin-top: 0.5rem;
+}
+
+.Products_H {
+    width: 21.8125;
+    height: 2rem;
+}
+
+.Products_H h3 {
+    color: var(--dark, #1C1C1C);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Title-H3 */
+    font-family: Inter;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem;
+    /* 133.333% */
+    letter-spacing: -0.0125rem;
+}
+
+.All_Products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* Adjust this to your preference */
+    /* align-items:stretch; */
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+}
+
+/* .Products_U5 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem;
+    align-items: center;
+}
+
+.Products_L5 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    align-items: center;
+}  */
+
+.Product_Details {
+    width: 13.75rem;
+    height: 19.375rem;
+    flex-shrink: 0;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: rgba(28, 28, 28, 1), rgba(224, 224, 224, 1), rgba(255, 255, 255, 1);
+    border-color: rgba(224, 224, 224, 1);
+    border: 1px;
+    margin: auto;
+    justify-content: space-evenly;
+    z-index: 1;
+
+}
+
+.Product_Image {
+    display: flex;
+    width: 12.5rem;
+    height: 12.5rem;
+    padding: 0.94444rem 0.94444rem 0.88888rem 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    z-index: 3;
+}
+
+.Product_Info {
+    width: 11.625rem;
+    height: 4.3125rem;
+    flex-shrink: 0;
+    color: var(--gray-500, #8B96A5);
+    font-feature-settings: 'clig' off, 'liga' off;
+    margin-left: 1rem;
+    /* Text-info */
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    /* 150% */
+    letter-spacing: -0.0125rem;
+    justify-content: center;
+}
+
+.Product_Price {
+    width: 4.09575rem;
+    height: 1.32744rem;
+    flex-shrink: 0;
+    color: var(--base-color-dark, #1C1C1C);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Text-title */
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.375rem;
+    /* 137.5% */
+}
+
+/* Responsive */
+@media (max-width:660px) {
+    .Products {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .All_Products {
+        width: 97%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* align-items: ce; */
+
+    }
+
+    .Product_Details {
+        width: 45%;
+        display: flex;
+        flex-wrap: wrap;
+        /* text-align:center; */
+    }
+}

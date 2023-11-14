@@ -1,0 +1,223 @@
+/* Common styles for the header */
+.header {
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    top: 0;
+    justify-content: space-evenly;
+    height: 5.75656rem;
+    width:100% ;
+    /* object-fit: fill; */
+    /* margin: auto; */
+}
+.HeaderEEE{
+    width: 74rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    right: 3rem;
+}
+
+/* Styles for the Android logo on smaller screens */
+.Andriod_logo {
+    display: none;
+}
+
+/* Styles for the header logo */
+.header_logo {
+    width: 28rem;
+    height: 3.6875rem;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+/* Styles for the header search section */
+.header_search {
+    display: flex;
+    border: 1px solid;
+    border-color: #C00707;
+    border-radius: 3px;
+}
+
+/* Styles for the search input field */
+.header_input {
+    padding: 0 20px;
+    width: 13.96006rem;
+    height: 2.17025rem;
+    flex-shrink: 0;
+    border: 1.5px solid;
+    border-color: #C00707;
+    border-radius: 3px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Styles for the category select box */
+.header_select {
+    cursor: pointer;
+    width: 8.71669rem;
+    height: 2.27025rem;
+    flex-shrink: 0;
+    border: 1.5px solid;
+    border-color: #C00707;
+    border-radius: 3px;
+}
+
+/* Styles for the search button */
+.header_button {
+    cursor: pointer;
+    display: flex;
+    width: 6.0115rem;
+    height: 2.27025rem;
+    padding: 0.5rem 0.6365rem 0.49275rem 0.625rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #C00707;
+    color: #FFF;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Styles for the menu icon (initially hidden) */
+.MenIcon {
+    display: none;
+}
+
+/* Styles for the menu icon container when open */
+/* .MMIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+} */
+
+/* Styles for the profile icon button */
+.PIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+/* Styles for the message icon button */
+.MIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Styles for the orders icon button */
+.HIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Styles for the cart icon button */
+.CIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Styles for the header elements container */
+.header_elements {
+    width: 21.78081rem;
+    background-color: #FFF;
+    /* display: block; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; */
+}
+
+.header_elementss {
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        /* align-items: center; */
+        /* border: #FFF 2px solid; */
+    }
+    .HeaderEEE{
+        right: 0.4%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* Hide the header logo on smaller screens */
+    .header_logo {
+        width: 100px;
+        /* Adjust width as needed for smaller screens */
+        height: auto;
+        display: none;
+    }
+
+    /* Show the Android logo on smaller screens */
+    .Andriod_logo {
+        display: block;
+        width: 2.7rem;
+        height: 2.7rem;
+    }
+
+    /* Hide the search select box and button on smaller screens */
+    .header_search select,
+    .header_search button {
+        display: none;
+    }
+
+    .header_search {
+        border-radius: 0.5rem;
+        align-items: center;
+        /* width: 70%; */
+    }
+
+    /* Display the menu icon on smaller screens */
+    .MenIcon {
+        display: block;
+        border: none;
+        background: none;
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .MenIcon Button {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    /* Adjust the search input width and remove border on smaller screens */
+    .header_search input {
+        /* width: 70%; */
+        border: none;
+        background: #FFF;
+        /* Add background color for better visibility */
+        border-radius: 0.5rem;
+    }
+
+    .header_elementss {
+        display: none;
+    }
+
+    .header_elements {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* padding: 10px; */
+    }
+}
